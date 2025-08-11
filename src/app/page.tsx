@@ -1,103 +1,50 @@
-import Image from "next/image";
+import MaxWidthWrapper from '@/components/max-width-wrapper'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className='p-4'>
+      <div className='md:min-h-[38.313rem] flex flex-col w-full md:gap-8.5 md:flex-row items-center justify-between'>
+        <div className='flex flex-col gap-5'>
+          <div className='flex flex-col gap-1.5 md:gap-2'>
+            <h1 className='text-primary font-bold leading-7.5 text-[1.559rem] md:text-3xl md:leading-10 tracking-[0px] max-w-[353px] md:max-w-[573px] text-center md:text-left'>The Authentic Place For All Your Farm Fresh Organic Food</h1>
+            <p className='text-black text-base leading-5.5 md:leading-[1.433rem] tracking-[0px] text-center md:text-left max-w-[353.78px] md:max-w-[504.45px]'>Harvest Hub helps to connect consumers with verified local organic farmers through a
+              seamless online marketplace.</p>
+          </div>
+          <div className='flex gap-[0.791rem] justify-center md:justify-start'>
+            <Link href={"*"} className={cn(buttonVariants({ className: "gap-[9.76px] md:gap-[11px] bg-[#1C1B1B] items-center" }))}>
+              <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4393 27.4107C18.918 28.8855 17.257 28.6526 15.6581 27.9541C13.966 27.24 12.4136 27.2089 10.6284 27.9541C8.393 28.9165 7.21321 28.6371 5.87818 27.4107C-1.69734 19.6024 -0.579639 7.71127 8.02044 7.27661C10.1161 7.38528 11.5753 8.42536 12.8017 8.5185C14.6335 8.14593 16.3877 7.0748 18.3436 7.21452C20.6877 7.4008 22.4574 8.33222 23.6217 10.0088C18.7783 12.9117 19.927 19.2919 24.3668 21.0771C23.482 23.4056 22.3332 25.7187 20.4238 27.4263L20.4393 27.4107ZM12.6465 7.18347C12.4136 3.72171 15.2234 0.865362 18.4523 0.585938C18.9025 4.59103 14.8198 7.57156 12.6465 7.18347Z" fill="white" />
+              </svg>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <p className='text-white tracking-[0px] font-bold text-[0.766rem] leading-[1.054rem] md:text-sm md:leading-5'>Get On iPhone</p>
+            </Link>
+            <Link href={"*"} className={cn(buttonVariants({ className: "gap-[9.76px] md:gap-[11px] bg-[#1C1B1B] items-center" }))}>
+              <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clipPath="url(#clip0_3576_1702)">
+                  <path d="M11.9092 13.4209L0.538208 25.3343C0.665903 25.7868 0.895375 26.2042 1.20908 26.5544C1.52279 26.9047 1.91243 27.1786 2.34821 27.3552C2.78399 27.5317 3.25438 27.6064 3.72343 27.5733C4.19247 27.5402 4.64774 27.4004 5.05444 27.1644L17.849 19.8775L11.9092 13.4209Z" fill="#EA4335" />
+                  <path d="M23.4071 11.3957L17.8743 8.22656L11.6465 13.6917L17.8997 19.8602L23.3903 16.7251C23.8767 16.4704 24.2841 16.0874 24.5684 15.6177C24.8527 15.148 25.0029 14.6094 25.0029 14.0603C25.0029 13.5113 24.8527 12.9727 24.5684 12.503C24.2841 12.0332 23.8767 11.6503 23.3903 11.3956L23.4071 11.3957Z" fill="#FBBC04" />
+                  <path d="M0.538152 2.72656C0.469461 2.98067 0.435247 3.24285 0.436431 3.50607V24.5534C0.437109 24.8166 0.471291 25.0786 0.538152 25.3331L12.299 13.7247L0.538152 2.72656Z" fill="#4285F4" />
+                  <path d="M11.9939 14.0298L17.8744 8.22564L5.09685 0.904785C4.6161 0.623248 4.06933 0.474146 3.51221 0.472662C2.12967 0.469975 0.914193 1.38758 0.538208 2.71811L11.9939 14.0298Z" fill="#34A853" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3576_1702">
+                    <rect width="24.5666" height="27.1577" fill="white" transform="translate(0.436279 0.472656)" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+
+              <p className='text-white tracking-[0px] font-bold text-[0.766rem] leading-[1.054rem] md:text-sm md:leading-5'>Get On Android</p>
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <Image src={"/hero-img.png"} alt='' width={590.71} height={540} />
+      </div>
     </div>
-  );
+  )
 }
