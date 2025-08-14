@@ -4,6 +4,7 @@ import Navbar from '@/components/navbar'
 import { Montserrat } from "next/font/google"
 import { cn } from '@/lib/utils';
 import "./globals.css";
+import Footer from '@/components/Footer';
 
 
 const monsterrat = Montserrat({
@@ -20,6 +21,7 @@ export default function layout({ children }: React.PropsWithChildren) {
 
         </MaxWidthWrapper>
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -1,3 +1,4 @@
+import FaqAccordion from '@/components/faq-accordion'
 import MaxWidthWrapper from '@/components/max-width-wrapper'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -57,8 +58,11 @@ export default function Home() {
             <h3 className='text-primary text-center md:text-left text-2xl leading-[1.873rem] font-bold md:text-[2rem] md:leading-10 tracking-[0px] '>Our Vision</h3>
             <p className='text-black text-base md:leading-5.5 leading-[1.412rem] font-normal tracking-[0px] md:max-w-[31.098rem] text-center md:text-left'>To become the leading digital marketplace for organic farm goods and beverages, trusted for its integrity, transparency, and commitment to a healthier planet and people.</p>
           </div>
-          <div className='w-[281.92px] h-[238.57px] lg:w-[709px] lg:h-[600px] relative mx-auto md:mx-0'>
+          <div className='w-[281.92px] h-[238.57px] lg:w-[709px] lg:h-[600px] relative mx-auto md:mx-0 hidden md:block'>
             <Image src={"/vision.png"} fill alt='vision-hero' />
+          </div>
+             <div className='w-full relative md:hidden min-h-[340px] mt-4 md:mt-0'>
+            <Image alt='woman looking fruits' src={"/vision.png"} className='object-cover object-center' fill={true} />
           </div>
         </MaxWidthWrapper>
       </div>
@@ -71,8 +75,11 @@ export default function Home() {
               To revolutionize how organic farm goods are bought and sold by creating a transparent, farmer-first platform that supports healthy lifestyles, sustainable agriculture, and direct community impact.
             </p>
           </div>
-          <div className='w-[281.92px] h-[238.57px] lg:w-[709px] lg:h-[600px] relative mx-auto md:mx-0'>
+          <div className='w-[281.92px] h-[238.57px] lg:w-[709px] lg:h-[600px] relative mx-auto md:mx-0 hidden md:block'>
             <Image src={"/mission.png"} fill alt='mission-hero' />
+          </div>
+          <div className='w-full relative md:hidden min-h-[340px] mt-4 md:mt-0'>
+            <Image alt='woman looking fruits' src={"/mission.png"} className='object-cover object-center' fill={true} />
           </div>
         </MaxWidthWrapper>
       </div>
@@ -139,8 +146,11 @@ export default function Home() {
               <p className='text-base leading-5.5 font-normal tracking-[0px] md:max-w-[367.89px] lg:max-w-[450px] text-center md:text-left text-white md:text-wrap text-balance'>We connect you directly with local farmers, we ensure every product is organic, traceable, and fairly sourced.</p>
             </div>
             <div className='relative w-[352.49px] h-[397.41px] md:w-[763.95px] md:h-[407.58px]'>
-            <Image src={"/ordering.png"} className='hidden md:block' fill alt='hero-values' />
-            <Image src={"/mobile-ordering.png"} className='md:hidden' fill alt='hero-values' />
+              <Image src={"/ordering.png"} className='hidden md:block' fill alt='hero-values' />
+              <div className='relative md:hidden w-full min-h-[397.1px]'>
+
+                <Image alt='woman looking fruits' src={"/mobile-ordering.png"} className='object-cover object-center' fill={true} />
+              </div>
             </div>
           </div>
         </MaxWidthWrapper>
@@ -153,43 +163,58 @@ export default function Home() {
               <h5 className='text-black font-semibold tracking-[0px] text-lg leading-5.5 md:text-[1.75rem] md:leading-[2.185rem] mb-[10px]'>Consumers</h5>
               <ul className='flex flex-col gap-2 md:gap-1'>
                 <div className='flex w-full items-center gap-2 md:px-2'>
-                <span className='size-1 bg-black rounded-full'></span>
-                <li className='text-base leading-5.5 font-normal tracking-[0px]'>Health-conscious families</li>
+                  <span className='size-1 bg-black rounded-full'></span>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>Health-conscious families</li>
                 </div>
                 <div className='flex w-full items-center gap-2 md:px-2'>
-                <span className='size-1 bg-black rounded-full'></span>
-                <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
+                  <span className='size-1 bg-black rounded-full'></span>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
                 </div>
                 <div className='flex w-full items-center gap-2 md:px-2'>
-                <span className='size-1 bg-black rounded-full'></span>
-                <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
+                  <span className='size-1 bg-black rounded-full'></span>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
                 </div>
               </ul>
             </div>
-            <Image width={319.46} height={274.99} alt='woman looking fruits' src={"/consumers-1.png"} />
+            <Image width={319.46} height={274.99} className='hidden md:block' alt='woman looking fruits' src={"/consumers-1.png"} />
+            <div className='w-full relative md:hidden bg-red-100 aspect-video rounded-[.5rem]'>
+
+              <Image alt='woman looking fruits' src={"/consumers-1.png"} className='object-cover object-center rounded-[.5rem]' fill={true} />
+            </div>
           </div>
           <div className='flex flex-col md:flex-row gap-7 md:justify-between md:items-center'>
             <div className='flex flex-col'>
               <h5 className='text-black font-semibold tracking-[0px] text-lg leading-5.5 md:text-[1.75rem] md:leading-[2.185rem] mb-[10px]'>Consumers</h5>
               <ul className='flex flex-col gap-2 md:gap-1'>
                 <div className='flex w-full items-center gap-2 md:px-2'>
-                <span className='size-1 bg-black rounded-full'></span>
-                <li className='text-base leading-5.5 font-normal tracking-[0px]'>Health-conscious families</li>
+                  <span className='size-1 bg-black rounded-full'></span>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>Health-conscious families</li>
                 </div>
                 <div className='flex w-full items-center gap-2 md:px-2'>
-                <span className='size-1 bg-black rounded-full'></span>
-                <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
+                  <span className='size-1 bg-black rounded-full'></span>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
                 </div>
                 <div className='flex w-full items-center gap-2 md:px-2'>
-                <span className='size-1 bg-black rounded-full'></span>
-                <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
+                  <span className='size-1 bg-black rounded-full'></span>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
                 </div>
               </ul>
             </div>
-            <Image width={319.46} height={274.99} alt='woman looking fruits' src={"/consumers-2.png"} />
+            <Image width={319.46} height={274.99} alt='woman looking fruits' className='hidden md:block' src={"/consumers-2.png"} />
+            <div className='w-full relative md:hidden bg-red-100 aspect-video rounded-[.5rem]'>
+
+              <Image alt='woman looking fruits' src={"/consumers-2.png"} className='object-cover object-center rounded-[.5rem]' fill={true} />
+            </div>
           </div>
         </div>
       </MaxWidthWrapper>
+      {/* faq starts here */}
+      <div className='bg-[#0D4700] px-4 py-[35px] flex w-full items-center md:py-[60px] flex-col'>
+        <h4 className='md:text-[2rem] text-[1.625rem] leading-[2rem] md:leading-10 tacking-[0px] font-bold text-white'>
+          FAQ
+        </h4>
+        <FaqAccordion />
+      </div>
     </div>
   )
 }
