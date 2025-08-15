@@ -141,7 +141,7 @@ export default function Home() {
           <div className='flex flex-col md:flex-row mt-[1.75rem] md:mt-[3.875rem] w-full gap-10 md:justify-between items-center'>
             <div className='flex flex-col gap-2 md:gap-1'>
               <h3 className='md:leading-9 tracking-[0px] text-[1.375rem] leading-8 font-bold md:text-[1.75rem] text-white text-center md:text-left md:max-w-[367.89px]  md:text-wrap'>
-                We're more than a marketplace. We’re a movement.
+                We&apos;re more than a marketplace. We&apos;re a movement.
               </h3>
               <p className='text-base leading-5.5 font-normal tracking-[0px] md:max-w-[367.89px] lg:max-w-[450px] text-center md:text-left text-white md:text-wrap text-balance'>We connect you directly with local farmers, we ensure every product is organic, traceable, and fairly sourced.</p>
             </div>
@@ -184,19 +184,19 @@ export default function Home() {
           </div>
           <div className='flex flex-col md:flex-row gap-7 md:justify-between md:items-center'>
             <div className='flex flex-col'>
-              <h5 className='text-black font-semibold tracking-[0px] text-lg leading-5.5 md:text-[1.75rem] md:leading-[2.185rem] mb-[10px]'>Consumers</h5>
+              <h5 className='text-black font-semibold tracking-[0px] text-lg leading-5.5 md:text-[1.75rem] md:leading-[2.185rem] mb-[10px]'>Farmers</h5>
               <ul className='flex flex-col gap-2 md:gap-1'>
                 <div className='flex w-full items-center gap-2 md:px-2'>
                   <span className='size-1 bg-black rounded-full'></span>
-                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>Health-conscious families</li>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>Small-to-mid-scale organic farmers</li>
                 </div>
                 <div className='flex w-full items-center gap-2 md:px-2'>
                   <span className='size-1 bg-black rounded-full'></span>
-                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>New growers needing direct market access</li>
                 </div>
                 <div className='flex w-full items-center gap-2 md:px-2'>
                   <span className='size-1 bg-black rounded-full'></span>
-                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>People seeking affordable, local organic produce</li>
+                  <li className='text-base leading-5.5 font-normal tracking-[0px]'>Rural farmers seeking e-commerce exposure</li>
                 </div>
               </ul>
             </div>

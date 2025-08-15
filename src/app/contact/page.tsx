@@ -12,7 +12,7 @@ export default function Contact() {
     return (
         <div className=' w-full bg-[#7997725E] md:py-8'>
             <MaxWidthWrapper>
-                <div className='w-full px-4 bg-white md:rounded-[1.25rem] flex flex-col md:flex-row-reverse md:px-6 py-[102px] gap-[50px] lg:gap-[80px] md:gap-[40px]'>
+                <div className='w-full px-4 bg-white md:rounded-[1.25rem] flex flex-col md:flex-row-reverse md:px-6 py-[42px] md:py-[102px] gap-[50px] lg:gap-[80px] md:gap-[40px]'>
                     <div className='flex md:w-[60%] flex-col gap-[1.688rem] md:gap-4 '>
                         <div className='flex flex-col md:flex-row gap-[1.688rem] md:gap-8'>
                             <InputLabel placeholder='Type your name' label='Name' ref={nameInputRef} />

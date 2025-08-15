@@ -12,7 +12,7 @@ export default function HowItWorks() {
 <rect x="184.981" y="88.3242" width="160.246" height="121.206" rx="40" transform="rotate(148.455 184.981 88.3242)" fill="#F79244"/>
 </svg>
 <svg className="absolute right-0 top-[100px] hidden lg:block" width="290" height="271" viewBox="0 0 290 271" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="302.006" y="150.711" width="252.04" height="190.637" rx="33.3872" transform="rotate(148.455 302.006 150.711)" fill="#1F5114" fill-opacity="0.6"/>
+<rect x="302.006" y="150.711" width="252.04" height="190.637" rx="33.3872" transform="rotate(148.455 302.006 150.711)" fill="#1F5114" fillOpacity="0.6"/>
 </svg>
 
 
