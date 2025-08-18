@@ -4,10 +4,41 @@ import InputLabel from '@/components/input-label'
 import MaxWidthWrapper from '@/components/max-width-wrapper'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
+import { useMutation } from '@tanstack/react-query'
+import axios from 'axios'
+import { Loader2 } from 'lucide-react'
 import React, { useRef } from 'react'
+
+interface ContactPost {
+    channel: string;
+    fullName: string;
+    emailAddress: string;
+    subject: string;
+    message: string;
+    ip: string
+    macAddress: string;
+}
 
 export default function Contact() {
     const nameInputRef = useRef<HTMLInputElement>(null)
+    const emailInputRef = useRef<HTMLInputElement>(null)
+    const subjectInputRef = useRef<HTMLInputElement>(null)
+    const messageInputRef = useRef<HTMLTextAreaElement>(null)
+
+    const {mutate, isPending} = useMutation({
+        mutationFn: async() => {
+            await axios.post("http://185.219.142.207:5000/website/contact", {
+                channel: "web",
+                fullName: nameInputRef.current?.value,
+                emailAddress: emailInputRef.current?.value,
+                subject: subjectInputRef.current?.value,
+                message: messageInputRef.current?.value,
+                ip: "3422",
+                macAddress: "434"
+            })
+        },
+        mutationKey: ["contact"],
+    })
 
     return (
         <div className=' w-full bg-[#7997725E] md:py-8'>
@@ -16,11 +47,14 @@ export default function Contact() {
                     <div className='flex md:w-[60%] flex-col gap-[1.688rem] md:gap-4 '>
                         <div className='flex flex-col md:flex-row gap-[1.688rem] md:gap-8'>
                             <InputLabel placeholder='Type your name' label='Name' ref={nameInputRef} />
-                            <InputLabel placeholder='Type your email' label='Email' ref={nameInputRef} />
+                            <InputLabel placeholder='Type your email' label='Email' ref={emailInputRef} />
                         </div>
-                        <InputLabel placeholder='Type your subject' label='Subject' ref={nameInputRef} />
-                        <Textarea placeholder='Type your message here' className='min-h-[120px]' />
-                        <Button className='w-full min-h-[50px] font-bold' size={"lg"}>Submit</Button>
+                        <InputLabel placeholder='Type your subject' label='Subject' ref={subjectInputRef} />
+                        <Textarea placeholder='Type your message here' ref={messageInputRef} className='min-h-[120px]' />
+                        <Button disabled={isPending} onClick={() => mutate()} className='w-full min-h-[50px] font-bold flex items-center' size={"lg"}>
+                            <span>Submit</span>
+                            {isPending && <Loader2 className='ml-1 animate-spin size-4' />}
+                        </Button>
                     </div>
                     <div className='md:w-[40%] !text-white w-full flex flex-col bg-primary py-[57px] md:py-10 md:min-h-full items-center  rounded-[15px] md:gap-[60px] gap-[38px]'>
                         <div className='flex flex-col md:gap-[17.2px] text-center gap-3.5'>

@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google"
 import { cn } from '@/lib/utils';
 import "./globals.css";
 import Footer from '@/components/Footer';
+import { ReactQueryProvider } from '@/components/providers/react-query-provider';
 
 
 const monsterrat = Montserrat({
@@ -16,12 +17,14 @@ export default function layout({ children }: React.PropsWithChildren) {
   return (
     <html lang='en'>
       <body className={cn(monsterrat.className)}>
+        <ReactQueryProvider>
         <MaxWidthWrapper>
           <Navbar />
 
         </MaxWidthWrapper>
         {children}
         <Footer />
+        </ReactQueryProvider>
       </body>
     </html>
   )
