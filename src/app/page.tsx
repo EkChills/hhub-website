@@ -19,14 +19,14 @@ export default function Home() {
                 seamless online marketplace.</p>
             </div>
             <div className='flex gap-[0.791rem] justify-center md:justify-start'>
-              <Link href={"*"} className={cn(buttonVariants({ className: "gap-[9.76px] md:gap-[11px] bg-[#1C1B1B] items-center" }))}>
+              <Link href={"*"} className={cn(buttonVariants({ className: "gap-[9.76px] h-12 md:gap-[11px] bg-[#1C1B1B] items-center" }))}>
                 <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.4393 27.4107C18.918 28.8855 17.257 28.6526 15.6581 27.9541C13.966 27.24 12.4136 27.2089 10.6284 27.9541C8.393 28.9165 7.21321 28.6371 5.87818 27.4107C-1.69734 19.6024 -0.579639 7.71127 8.02044 7.27661C10.1161 7.38528 11.5753 8.42536 12.8017 8.5185C14.6335 8.14593 16.3877 7.0748 18.3436 7.21452C20.6877 7.4008 22.4574 8.33222 23.6217 10.0088C18.7783 12.9117 19.927 19.2919 24.3668 21.0771C23.482 23.4056 22.3332 25.7187 20.4238 27.4263L20.4393 27.4107ZM12.6465 7.18347C12.4136 3.72171 15.2234 0.865362 18.4523 0.585938C18.9025 4.59103 14.8198 7.57156 12.6465 7.18347Z" fill="white" />
                 </svg>
 
                 <p className='text-white tracking-[0px] font-bold text-[0.766rem] leading-[1.054rem] md:text-sm md:leading-5'>Get On iPhone</p>
               </Link>
-              <Link href={"*"} className={cn(buttonVariants({ className: "gap-[9.76px] md:gap-[11px] bg-[#1C1B1B] items-center" }))}>
+              <Link href={"*"} className={cn(buttonVariants({ className: "gap-[9.76px] h-12 md:gap-[11px] bg-[#1C1B1B] items-center" }))}>
                 <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clipPath="url(#clip0_3576_1702)">
                     <path d="M11.9092 13.4209L0.538208 25.3343C0.665903 25.7868 0.895375 26.2042 1.20908 26.5544C1.52279 26.9047 1.91243 27.1786 2.34821 27.3552C2.78399 27.5317 3.25438 27.6064 3.72343 27.5733C4.19247 27.5402 4.64774 27.4004 5.05444 27.1644L17.849 19.8775L11.9092 13.4209Z" fill="#EA4335" />
@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
       {/* vision section starts */}
-      <div className='mt-[1.672rem] bg-[#1F51140F] md:mt-[1.75rem] lg:mt-[11.599rem]  py-[1.759rem] md:py-[3.688rem] md:pb-[4.938rem] lg:pb-[6rem] px-4'>
+      <section id='vision' className='mt-[1.672rem] bg-[#1F51140F] md:mt-[1.75rem] lg:mt-[11.599rem]  py-[1.759rem] md:py-[3.688rem] md:pb-[4.938rem] lg:pb-[6rem] px-4'>
         <MaxWidthWrapper className='md:items-center md:justify-between flex flex-col md:flex-row-reverse md:gap-6'>
           <div className='flex flex-col gap-[0.688rem] md:gap-4'>
             <h3 className='text-primary text-center md:text-left text-2xl leading-[1.873rem] font-bold md:text-[2rem] md:leading-10 tracking-[0px] '>Our Vision</h3>
@@ -65,9 +65,9 @@ export default function Home() {
             <Image alt='woman looking fruits' src={"/vision.png"} className='object-cover object-center' fill={true} />
           </div>
         </MaxWidthWrapper>
-      </div>
+      </section>
       {/* Mission section starts */}
-      <div className=' bg-[#D55D0112]   py-[1.759rem] md:py-[3.688rem] md:pb-[4.938rem] lg:pb-[6rem] px-4'>
+      <section id='our-mission' className=' bg-[#D55D0112] py-[1.759rem] md:py-[3.688rem] md:pb-[4.938rem] lg:pb-[6rem] px-4'>
         <MaxWidthWrapper className='md:items-center md:justify-between flex flex-col md:flex-row md:gap-6 '>
           <div className='flex flex-col gap-[0.688rem] md:gap-4'>
             <h3 className='text-primary text-center md:text-left text-2xl leading-[1.873rem] font-bold md:text-[2rem] md:leading-10 tracking-[0px] '>Our Mission</h3>
@@ -82,7 +82,7 @@ export default function Home() {
             <Image alt='woman looking fruits' src={"/mission.png"} className='object-cover object-center' fill={true} />
           </div>
         </MaxWidthWrapper>
-      </div>
+      </section>
       {/* values section starts */}
       <MaxWidthWrapper className='py-8 pt-[4.75rem] w-full px-4 md:pb-[83px]'>
         <h3 className='text-primary text-center text-2xl leading-[1.873rem] font-bold md:text-[2rem] md:leading-10 tracking-[0px] '>Values</h3>

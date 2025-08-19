@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import "./globals.css";
 import Footer from '@/components/Footer';
 import { ReactQueryProvider } from '@/components/providers/react-query-provider';
+import { Toaster } from '@/components/ui/sonner';
 
 
 const monsterrat = Montserrat({
@@ -18,13 +19,17 @@ export default function layout({ children }: React.PropsWithChildren) {
     <html lang='en'>
       <body className={cn(monsterrat.className)}>
         <ReactQueryProvider>
-        <MaxWidthWrapper>
+          <div className='sticky top-0 inset-x-0 z-20 bg-white'>
+        <MaxWidthWrapper className=''>
           <Navbar />
 
         </MaxWidthWrapper>
+
+          </div>
         {children}
         <Footer />
         </ReactQueryProvider>
+        <Toaster />
       </body>
     </html>
   )

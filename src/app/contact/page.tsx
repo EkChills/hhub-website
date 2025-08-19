@@ -8,6 +8,7 @@ import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'
 import { Loader2 } from 'lucide-react'
 import React, { useRef } from 'react'
+import { toast } from 'sonner'
 
 interface ContactPost {
     channel: string;
@@ -38,6 +39,12 @@ export default function Contact() {
             })
         },
         mutationKey: ["contact"],
+        onSuccess:() => {
+            toast.success("Message sent successfully!")
+        },
+        onError: () => {
+            toast.error("An error occurred while sending your message. Please try again later.")
+        }
     })
 
     return (
