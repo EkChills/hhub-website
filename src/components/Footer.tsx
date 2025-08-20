@@ -43,8 +43,8 @@ export default function Footer() {
                 </div>
                 <div className='flex flex-col items-center text-center md:items-start md:text-left gap-1.5 '>
                     <p className='text-base text-[#1F5114] font-semibold leading-5.5 tracking-[0px]'>Legal</p>
-                    <p className='text-base text-[#202020] leading-5.5 tracking-[0px] font-normal'>Terms & Conditions</p>
-                    <p className='text-base text-[#202020] leading-5.5 tracking-[0px] font-normal'>Privacy</p>
+                    <Link href={"/terms-and-conditions"}><p className='text-base text-[#202020] leading-5.5 tracking-[0px] font-normal'>Terms & Conditions</p></Link>
+                    <Link href="/privacy-policy"><p className='text-base text-[#202020] leading-5.5 tracking-[0px] font-normal'>Privacy</p></Link>
                 </div>
                 <div className='flex flex-col'>
                     <div className='flex flex-col items-center text-center md:items-start md:text-left gap-1.5 '>

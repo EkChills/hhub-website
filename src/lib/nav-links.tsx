@@ -1,3 +1,5 @@
+import { Cookie, Handshake } from "lucide-react";
+
 export const navLinks = [
     {
         text: "Home",
@@ -36,6 +38,18 @@ export const navLinks = [
                 </clipPath>
             </defs>
         </svg>
+
+    },
+    {
+        text: "terms & conditions",
+        link: "/terms-and-conditions",
+        icon: <Handshake />
+
+    },
+    {
+        text: "Privacy Policy",
+        link: "/privacy-policy",
+        icon: <Cookie />
 
     }
 ]
