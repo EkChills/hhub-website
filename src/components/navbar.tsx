@@ -18,26 +18,28 @@ export default function Navbar() {
         startTransition(() => {
             router.push(link)
         })
-        if(!isPending) {
+        if (!isPending) {
             setIsMenuOpen(false)
 
         }
     }
 
     useEffect(() => {
-        if(isMenuOpen) {
+        if (isMenuOpen) {
             document.body.style.overflowY = "hidden"
         } else {
-                        document.body.style.overflowY = "auto"
+            document.body.style.overflowY = "auto"
         }
     }, [isMenuOpen])
 
     return (
         <div className='flex items-center justify-between  pr-4 h-[92px] md:h-[125px]'>
-            <div className='flex items-center'>
-                <Image width={92} height={92} alt='logo' src={"/dashboard-logo.svg"} />
-                <p className='text-black font-bold text-[1.098rem] leading-[1.2rem] tracking-[0px]'>Harvest Hub</p>
-            </div>
+            <Link href={"/"}>
+                <div className='flex items-center'>
+                    <Image width={92} height={92} alt='logo' src={"/dashboard-logo.svg"} />
+                    <p className='text-black font-bold text-[1.098rem] leading-[1.2rem] tracking-[0px]'>Harvest Hub</p>
+                </div>
+            </Link>
             <div className=''>
                 <svg onClick={() => setIsMenuOpen(true)} width="31" height="27" viewBox="0 0 31 27" className='md:hidden cursor-pointer' fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_4421_15951)">
