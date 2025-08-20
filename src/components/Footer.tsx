@@ -21,7 +21,7 @@ export default function Footer() {
                         <Link target='_blank' href={"https://www.instagram.com/harvesthubofficial"}>
                             <Image width={21} height={23} alt='instagram' src={"/insta.svg"} />
                         </Link>
-                        <Link target='_blank' href={"https://www.linkedin.com/company/harvesthubofficial"}>
+                        <Link target='_blank' href={"https://www.linkedin.com/in/harvesthub-harvest-hub-41a37337b"}>
                             <Image width={21} height={23} alt='linkedIn' src={"/linkedin.svg"} />
                         </Link>
                         <Link target='_blank' href={"https://www.tiktok.com/@harvesthub3"}>
