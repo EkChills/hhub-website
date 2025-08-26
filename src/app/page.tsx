@@ -18,7 +18,7 @@ export default function Home() {
               <p className='text-black text-base leading-5.5 md:leading-[1.433rem] tracking-[0px] text-center md:text-left md:max-w-[504.45px]'>Harvest Hub helps to connect consumers with verified local organic farmers through a
                 seamless online marketplace.</p>
             </div>
-            <div className='flex gap-[0.791rem] justify-center md:justify-start'>
+            <div className='flex gap-[0.791rem] justify-center md:!justify-start'>
               <Link href={"*"} className={cn(buttonVariants({ className: "gap-[9.76px] h-12 md:gap-[11px] bg-[#1C1B1B] items-center" }))}>
                 <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.4393 27.4107C18.918 28.8855 17.257 28.6526 15.6581 27.9541C13.966 27.24 12.4136 27.2089 10.6284 27.9541C8.393 28.9165 7.21321 28.6371 5.87818 27.4107C-1.69734 19.6024 -0.579639 7.71127 8.02044 7.27661C10.1161 7.38528 11.5753 8.42536 12.8017 8.5185C14.6335 8.14593 16.3877 7.0748 18.3436 7.21452C20.6877 7.4008 22.4574 8.33222 23.6217 10.0088C18.7783 12.9117 19.927 19.2919 24.3668 21.0771C23.482 23.4056 22.3332 25.7187 20.4238 27.4263L20.4393 27.4107ZM12.6465 7.18347C12.4136 3.72171 15.2234 0.865362 18.4523 0.585938C18.9025 4.59103 14.8198 7.57156 12.6465 7.18347Z" fill="white" />
@@ -62,7 +62,7 @@ export default function Home() {
             <Image src={"/vision.png"} fill alt='vision-hero' />
           </div>
              <div className='w-full relative md:hidden min-h-[340px] mt-4 md:mt-0'>
-            <Image alt='woman looking fruits' src={"/vision.png"} className='object-cover object-center' fill={true} />
+            <Image alt='woman looking fruits' src={"/vision.png"} className='object-contain object-center' fill={true} />
           </div>
         </MaxWidthWrapper>
       </section>
@@ -79,7 +79,7 @@ export default function Home() {
             <Image src={"/mission.png"} fill alt='mission-hero' />
           </div>
           <div className='w-full relative md:hidden min-h-[340px] mt-4 md:mt-0'>
-            <Image alt='woman looking fruits' src={"/mission.png"} className='object-cover object-center' fill={true} />
+            <Image alt='woman looking fruits' src={"/mission.png"} className='object-contain object-center' fill={true} />
           </div>
         </MaxWidthWrapper>
       </section>

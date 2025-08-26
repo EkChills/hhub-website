@@ -76,7 +76,7 @@ export default function Navbar() {
                             navLinks.map((l, idx) => (
                                 <div onClick={() => handleNavigate(l.link)} key={idx} className='flex gap-3 items-center cursor-pointer'>
                                     {l.icon}
-                                    <p className={cn("text-lg font-normal text-primary tracking-[0px]", pathname === l.link ? "font-bold" : "")}>{l.text}</p>
+                                    <p className={cn("text-lg font-normal text-primary capitalize tracking-[0px]", pathname === l.link ? "font-bold" : "")}>{l.text}</p>
                                 </div>
                             ))
                         }
