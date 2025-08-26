@@ -46,7 +46,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className='relative w-[345.07px] h-[315.73px] md:h-[540.8px] md:w-[590.71px]'>
+          <div className='relative w-[345.07px] h-[315.73px] md:h-[540.8px] md:w-[590.71px] rounded-full animate-[spin_20s_linear_infinite]'>
             <Image src={"/hero-img.png"} alt='hero-img' fill />
           </div>
         </div>
