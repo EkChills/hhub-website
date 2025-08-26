@@ -6,14 +6,15 @@ interface InputLabelType {
     label: string;
     placeholder: string;
     ref: RefObject<HTMLInputElement | null>
+    type?: string;
 }
 
-export default function InputLabel({label, placeholder, ref}:InputLabelType) {
+export default function InputLabel({label, placeholder, ref, type = "text"}:InputLabelType) {
 
     return (
         <div className="grid w-full items-center gap-3">
-            <Label className='text-sm leading-[1.25rem] tracking-[-0.28px] font-medium' htmlFor="email">{label}</Label>
-            <Input type="text" className='min-h-[50px] rounded-[5px] w-full' ref={ref} id={label} placeholder={placeholder} />
+            <Label className='text-sm leading-[1.25rem] tracking-[-0.28px] font-medium'  htmlFor={label}>{label}</Label>
+            <Input type={type} required className='min-h-[50px] rounded-[5px] w-full' ref={ref} id={label} placeholder={placeholder} />
         </div>
 
     )
